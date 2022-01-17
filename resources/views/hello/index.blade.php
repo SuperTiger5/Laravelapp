@@ -10,7 +10,11 @@
   </head>
   <body>
       <h1>Blade/Index</h1>
-      <p>{{$msg}}</p>
+      @isset($msg)
+      <p>こんにちは、{{$msg}}さん。</p>
+      @else
+      <p>何か書いて下さい。</p>
+      @endisset
       <form method="POST" action="/laravelapp/public/hello">
           {{ csrf_field() }}
           <input type="text" name="msg">
