@@ -18,4 +18,5 @@ Route::get('/', function () {
 });
 
 
-Route::get('hello', 'App\Http\Controllers\HelloController@index');
+Route::get('hello', 'App\Http\Controllers\HelloController@index')
+    ->middleware('helo');
