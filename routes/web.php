@@ -17,7 +17,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-use App\Http\MiddleWare\HelloMiddleWare;
 
-Route::get('hello', 'App\Http\Controllers\HelloController@index')
-    ->middleware(HelloMiddleware::class);
+Route::get('hello', 'App\Http\Controllers\HelloController@index');
