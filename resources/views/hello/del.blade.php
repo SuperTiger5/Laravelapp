@@ -2,7 +2,7 @@
 
 @section('title', 'Delete')
 
-@section('member')
+@section('menubar')
   @parent
   削除ページ
 @endsection

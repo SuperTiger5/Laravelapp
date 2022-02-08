@@ -2,7 +2,7 @@
 
 @section('title', 'Edit')
 
-@section('member')
+@section('menubar')
   @parent
   更新ページ
 @endsection
