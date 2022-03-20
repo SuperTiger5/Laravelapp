@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Board extends Model
 {
    protected $guard = array('id');
+   protected $fillable = ['person_id','title','message'];
 
    public static $rules = array(
        'person_id' => 'required',
