@@ -39,4 +39,8 @@ class Person extends Model
     public function scopeAgeLessThan($query, $n) {
         return $query->where('age', '<=', $n);
     }
+
+    public function board() {
+        return $this->hasOne('App\Models\Board');
+    }
 }
